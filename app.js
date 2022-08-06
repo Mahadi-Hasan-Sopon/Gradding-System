@@ -15,9 +15,9 @@ if (userInput <= 100 && userInput > 80) {
     result.innerHTML = "C"
 } else if (userInput <= 40 && userInput >= 33) {
     result.innerHTML = "D"
-} else if (userInput < 33 && userInput !== "") {
+} else if (userInput < 33 && userInput !== "" && userInput !== null) {
     result.innerHTML = "Fail"
-} else if(userInput === "") {
+} else if(userInput === "" || userInput === null) {
     result.innerHTML = "Please enter your point";
 } else {
     result.innerHTML = "Invalid Input"
